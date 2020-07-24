@@ -244,6 +244,7 @@ a > .rating > span:last-child {
 }
 
 .sidebar-close-button {
+  background-color: #FFFDFD;
   border-radius: 50%;
   border: .1rem #000 solid;
   width: 3rem;
@@ -761,6 +762,9 @@ tbody>tr:nth-child(odd) {
   }
   
   .filter li:last-of-type {
+    display: none;
+  }
+  .footer div:last-child {
     display: none;
   }
 }

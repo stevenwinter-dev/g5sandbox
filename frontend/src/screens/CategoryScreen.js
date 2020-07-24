@@ -56,7 +56,7 @@ function CategoryScreen (props) {
       products.map(product => 
         <li key={product._id}>
         <div className='product'>
-            <Link to={'/product/' + product._id}>
+            <Link to={'/product/' + product._id} className='product-image-container'>
                 <img className='product-image' src={product.image} alt={product.name} />
             </Link>
             <div className='product-name'>
