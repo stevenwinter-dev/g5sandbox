@@ -620,10 +620,10 @@ tbody>tr:nth-child(odd) {
 }
 
 .hero {
-  background: linear-gradient(141deg, rgba(0,232,251,.6) 14%, rgba(17,17,17,.6) 88%), url('./n64.jpg');
+  background: linear-gradient(141deg, rgba(0,232,251,.6) 14%, rgba(17,17,17,.6) 88%), url('./images/n64.jpg');
   background-repeat: no-repeat;
   height: 98vh;
-  background-position: center;
+  background-position: right;
     background-size: cover;
 }
 
@@ -701,6 +701,66 @@ tbody>tr:nth-child(odd) {
     display: inline-block;
   }
   .header-links {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 980px) {
+  .hero-text p {
+    max-width: 75%;
+  }
+}
+
+@media only screen and (max-width : 849px) {
+  .hero-text p {
+    color: white;  
+  }
+}
+
+@media only screen and (max-width : 735px) {
+  .hero {
+    height: 60vh;
+  }
+  .hero-text {
+    max-width: 80%;
+    height: 55vh;
+  }
+  .hero-text h1 {
+    font-size: 3rem;
+    letter-spacing: 0;
+  }
+  .filter {
+    justify-content: center;
+  }
+  .filter input{
+    width: 15rem;
+  }
+  .filter select {
+    width: 10rem;
+    font-size: 1.2rem;
+  }
+  .filter li {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width : 403px) {
+  .hero {
+    height: 40vh;
+  }
+  .hero-text {
+    max-width: 95%;
+    height: 40vh;
+  }
+  .hero-text p {
+    color: white;
+    max-width: 95%;
+  }
+  .hero-buttons {
+    display: none;
+  }
+  
+  .filter li:last-of-type {
     display: none;
   }
 }
